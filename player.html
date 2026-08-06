@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { overflow: hidden; }
+    .wrapper { position: relative; width: 100vw; height: 100vh; }
+    video { width: 100%; height: 100%; object-fit: cover; }
+    .redirect-overlay {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%; display: block; z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <video autoplay muted loop playsinline>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+    <a href="https://yourwebsite.com" target="_top" class="redirect-overlay"></a>
+  </div>
+</body>
+</html>
